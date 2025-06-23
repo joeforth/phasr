@@ -19,15 +19,25 @@ The AOT/Oil/Water system is a classic three-phase system studied in soft matter 
 ##  Model Training
 
 - **Base Model:** YOLOv11 pre-trained on COCO
-- **Custom Dataset:** Manually labeled images of the AOT/oil/water system using bounding boxes with the roboflow tool
+- **Custom Dataset:** Manually labelled images of the AOT/oil/water system using bounding boxes with the roboflow tool
 - **Classes:**
   Vial  
   foam  
   slightly turbid  
   transparent  
   very turbid
--**Framework** The model was trained using ultralytics pip install
+-**Framework** The model was trained using Ultralytics pip install
 
 ###  Download the Model
 
 Download model weights (https://drive.google.com/file/d/13nk2bEvdwddsLIPN1D6EZjZWgze-5aw_/view?usp=sharing)
+
+
+## How to run the project
+
+  Clone the repository and add the model to the folder.
+  Run the main.py
+  Select a video source
+  Place the vial(s) between 5 and 20 cm for best results.
+  Set up the experiment by choosing a folder to store the results.
+  Either configure the timer for automatic inference or click the capture and detect button to run the inference manually.
