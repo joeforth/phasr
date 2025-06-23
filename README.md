@@ -41,3 +41,6 @@ Download model weights (https://drive.google.com/file/d/13nk2bEvdwddsLIPN1D6EZjZ
   Place the vial(s) between 5 and 20 cm for best results.
   Set up the experiment by choosing a folder to store the results.
   Either configure the timer for automatic inference or click the capture and detect button to run the inference manually.
+
+
+The use of YOLO from Ultralytics was made under the AGPL-3.0 License.
