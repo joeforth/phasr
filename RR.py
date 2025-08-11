@@ -1,3 +1,7 @@
+#This file can only be run if the correct model is in the same file as the rest please download the YOLO STFA model
+
+
+
 import math
 import random
 
@@ -126,6 +130,7 @@ while cont == True:
     previous = new
     if cv.waitKey(1) == ord("q"):
         cont = False
+
 
 
 
