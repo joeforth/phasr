@@ -30,7 +30,7 @@ The AOT/Oil/Water system is a classic three-phase system studied in soft matter 
 
 ###  Download the Model
 
-Download model weights (https://drive.google.com/file/d/13nk2bEvdwddsLIPN1D6EZjZWgze-5aw_/view?usp=sharing)
+Download model weights (https://drive.google.com/drive/folders/1HV_qvKs7KJxT8U7x1opjqCJlEw4spbQJ?usp=sharing)
 
 
 ## How to run the project
