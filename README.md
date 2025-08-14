@@ -15,8 +15,8 @@ This project demonstrates the  training of a new architecture for Video Instance
   segmentation mask over time of the phases detected.
 
 
-##  Model Training
-
+##  Model
+![YOLO11 STFA architechture](/assets/YOLO11STFA.jpg)
 - **Base Model:** YOLOv11 with no SPPF and C2PSA blocks instead the Space-Time-Feature agregation block was added to replace these to introduce
   the temporal aspect when performing video instance segmentation
 - **Custom Dataset:** Manually labelled images of the AOT/oil/water system using bounding boxes with the roboflow tool
@@ -26,7 +26,9 @@ This project demonstrates the  training of a new architecture for Video Instance
   slightly turbid  
   transparent  
   very turbid
--**Framework** The model was trained using Ultralytics pip install with a modified neural network folder to accept the changes made.
+-**Framework** The model was trained using Ultralytics model.train() with a modified neural network folder to accept the changes made.
+               The input of the model is 3 frames concatenated, resulting in a shape of (640,480,9)
+               To run the model with one image, concatenate the image with itself. 
 
 
 ###  Download the Model
