@@ -16,7 +16,7 @@ This project demonstrates the  training of a new architecture for Video Instance
 
 
 ##  Model
-![YOLO11 STFA architechture](/assets/YOLO11STFA.jpg)
+![YOLO11 STFA architechture](/assets/YOLO11STFA ARCH.jpg)
 - **Base Model:** YOLOv11 with no SPPF and C2PSA blocks instead the Space-Time-Feature agregation block was added to replace these to introduce
   the temporal aspect when performing video instance segmentation
 - **Custom Dataset:** Manually labelled images of the AOT/oil/water system using bounding boxes with the roboflow tool
