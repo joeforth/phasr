@@ -37,11 +37,11 @@ Download model weights (https://drive.google.com/drive/folders/1HV_qvKs7KJxT8U7x
 
 ### Files
 
-GUI.py, RR.py and Tracker.py need to be together to run the GUI file
-RR.py contains the code to run the model and output the annotated frame.
-Tracker.py tracks and smooths the mask to perform a better detection.
-GUI.py contains the code for the GUI
-yolo11n-segALI.yaml is the yaml file that builds the model. Reading it gives clues as to how the model is built and what blocks or modules make up the model.
+- GUI.py, RR.py and Tracker.py need to be together to run the GUI file
+- RR.py contains the code to run the model and output the annotated frame.
+- Tracker.py tracks and smooths the mask to perform a better detection.
+- GUI.py contains the code for the GUI
+- yolo11n-segALI.yaml is the yaml file that builds the model. Reading it gives clues as to how the model is built and what blocks or modules make up the model.
 
 
 ## How to run the project
