@@ -46,13 +46,13 @@ yolo11n-segALI.yaml is the yaml file that builds the model. Reading it gives clu
 
 ## How to run the project
 
-  Clone the repository and add the model to the folder. 
-  run pip install PyQt5 opencv-python ultralytics numpy scipy pygrabber
-  go to the location of the ultralytics install (pip show ultralytics) and change the nn folder to the one in the repository
-  Run the GUI.py
-  Select a video source
-  Place the vial(s) between 5 and 20 cm for best results.
-  start tracking
+- Clone the repository and add the model to the folder. 
+- run pip install PyQt5 opencv-python ultralytics numpy scipy pygrabber
+- go to the location of the ultralytics install (pip show ultralytics) and change the nn folder to the one in the repository
+- Run the GUI.py
+- Select a video source
+- Place the vial(s) between 5 and 20 cm for best results.
+- start tracking
 
 
 
