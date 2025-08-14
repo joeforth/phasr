@@ -26,9 +26,10 @@ This project demonstrates the  training of a new architecture for Video Instance
   slightly turbid  
   transparent  
   very turbid
--**Framework** The model was trained using Ultralytics model.train() with a modified neural network folder to accept the changes made.
-               The input of the model is 3 frames concatenated, resulting in a shape of (640,480,9)
-               To run the model with one image, concatenate the image with itself. 
+- **Framework**
+-   The model was trained using Ultralytics model.train() with a modified neural network folder to accept the changes made.
+-   The input of the model is 3 frames concatenated, resulting in a shape of (640,480,9)
+-   To run the model with one image, concatenate the image with itself. 
 
 
 ###  Download the Model
