@@ -17,7 +17,6 @@ This project demonstrates the  training of a new architecture for Video Instance
 
 ##  Model Training
 
-Ali Branch
 - **Base Model:** YOLOv11 with no SPPF and C2PSA blocks instead the Space-Time-Feature agregation block was added to replace these to introduce
   the temporal aspect when performing video instance segmentation
 - **Custom Dataset:** Manually labelled images of the AOT/oil/water system using bounding boxes with the roboflow tool
@@ -34,10 +33,18 @@ Ali Branch
 
 Download model weights (https://drive.google.com/drive/folders/1HV_qvKs7KJxT8U7x1opjqCJlEw4spbQJ?usp=sharing)
 
+### Files
+
+GUI.py, RR.py and Tracker.py need to be together to run the GUI file
+RR.py contains the code to run the model and output the annotated frame.
+Tracker.py tracks and smooths the mask to perform a better detection.
+GUI.py contains the code for the GUI
+yolo11n-segALI.yaml is the yaml file that builds the model. Reading it gives clues as to how the model is built and what blocks or modules make up the model.
+
 
 ## How to run the project
 
-  Clone the repository and add the model to the folder.
+  Clone the repository and add the model to the folder. 
   run pip install PyQt5 opencv-python ultralytics numpy scipy pygrabber
   go to the location of the ultralytics install (pip show ultralytics) and change the nn folder to the one in the repository
   Run the GUI.py
