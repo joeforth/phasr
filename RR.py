@@ -29,7 +29,7 @@ class VideoThread(QThread):
         self.distance_threshold = 25.0
         self.smoothing_factor = 0.5
         self.max_liveliness = 25.0
-        self.model = YOLO('nb1AUGMENT.pt')
+        self.model = YOLO('YOLOSTFA.pt')
         self.cap = cv.VideoCapture(camera_index, cv.CAP_DSHOW)
 
     def run(self):
@@ -134,6 +134,7 @@ class VideoThread(QThread):
         self.distance_threshold = distance_threshold
         self.smoothing_factor = smoothing_factor
         self.max_liveliness = max_liveliness
+
 
 
 
