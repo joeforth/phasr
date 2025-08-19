@@ -33,6 +33,15 @@ The AOT/Oil/Water system is a classic three-phase system studied in soft matter 
 Download model weights (https://drive.google.com/file/d/13nk2bEvdwddsLIPN1D6EZjZWgze-5aw_/view?usp=sharing)
 
 
+## How to Train YOLO11 STFA
+Create a new conda environment and install ultralytics for training as the ali branch and main branch are not compatible for trainnig.
+- Create and anotate the dataset using roboflow
+- Download the dataset
+- In the train.py put the version of the data you want to use (n,s,m,l,x) file in the model = YOLO("yolo11n.yaml") Line for example the medium model trains with model = YOLO("yolo11m.yaml")
+- pretrained weights are from the coco dataset which almost always produces worse results when tuning for chemitry.
+- In the results = model.train() make sure the data= hyperparameter is pointing to the location of the data.yaml file in your newly created dataset
+- once the model has trained the weights should be in the runs/segment/name_of_the_training/weights
+
 ## How to run the project
 
   Clone the repository and add the model to the folder.
