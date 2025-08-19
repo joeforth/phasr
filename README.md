@@ -48,7 +48,7 @@ Download model weights (https://drive.google.com/drive/folders/1HV_qvKs7KJxT8U7x
 ## How to run the project
 
 - Clone the repository and add the model to the folder. 
-- run pip install PyQt5 opencv-python ultralytics numpy scipy pygrabber
+- run pip install requirements.txt
 - go to the location of the ultralytics install (pip show ultralytics) and change the nn folder to the one in the repository
 - Run the GUI.py
 - Select a video source
