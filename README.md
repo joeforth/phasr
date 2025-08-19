@@ -44,6 +44,16 @@ Download model weights (https://drive.google.com/drive/folders/1HV_qvKs7KJxT8U7x
 - GUI.py contains the code for the GUI
 - yolo11n-segALI.yaml is the yaml file that builds the model. Reading it gives clues as to how the model is built and what blocks or modules make up the model.
 
+## How to Train YOLO11 STFA
+
+- Create and anotate the dataset using roboflow
+- Separate the experiments into separate folders as this model makes use of time it is important that frames from different exeriments don't overlap
+- Run the DatasetCreation.py with the folders for each experiments. The folders go at the end of the file in the SOURCE_DATASET_DIRS = [] array
+- make sure to add the data.yaml file to the newly created 9 channel dataset.
+- In the train.py put the yolo11n-segALI.yaml file in the model = YOLO("yolo11n-segALI.yaml") Line
+- In the results = model.train() make sure the data= hyperparameter is pointing to the location of the data.yaml file in your newly created dataset
+- once the model has trained the weights should be in the runs/segment/name_of_the_training/weights
+
 
 ## How to run the project
 
