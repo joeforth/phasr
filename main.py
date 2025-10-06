@@ -8,11 +8,8 @@ from PIL import Image, ImageTk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from pygrabber.dshow_graph import FilterGraph
 import time
-
-
 import processing
 import matplotlib.pyplot as plt
-
 
 # Initialize the camera
 cap = cv2.VideoCapture("noFeed.jpeg")
@@ -330,14 +327,8 @@ stop_timer_btn.pack(side="top", pady=5)
 plot_button = ttk.Button(root, text="Open Phase Plots", command=open_plot_window)
 plot_button.pack(side="top", padx=10, pady=5)
 
-
-
-
 entry_container = tk.Frame(root)
 entry_container.pack(side="bottom", fill="x", padx=10, pady=10)
-
-
-
 
 update_feed()
 root.mainloop()

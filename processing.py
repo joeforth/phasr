@@ -1,9 +1,8 @@
 from ultralytics import YOLO
 import cv2
 
-
-model = YOLO("best.pt")  # initialize model
-
+# model = YOLO("YOLOV11modelv9.pt")  # initialize model
+model = YOLO("AOTOBJECTDETECTIONYOLO.pt")  # initialize model
 
 def cluster_x_values(x_values, threshold=30):
     if not x_values:
